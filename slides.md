@@ -8,51 +8,56 @@ header: "Technical Docs — 2025"
 footer: "© 2025 — Janani | 23f1002293@ds.study.iitm.ac.in"
 ---
 
-<!-- Custom Theme Definition -->
+<!-- ========================================================= -->
+<!--                    Custom Theme (product-docs)            -->
+<!-- ========================================================= -->
 <style>
+/* Base slide styling */
 section {
   font-family: "Inter", Arial, sans-serif;
   letter-spacing: 0.2px;
+  color: #222;
+  background: #ffffff;
+  padding: 60px;
 }
 
-/* Custom heading color */
+/* Heading styles */
 h1, h2, h3 {
   color: #0057ff;
+  font-weight: 700;
 }
 
-/* Footer styling */
+/* Footer style */
 footer {
-  color: #444;
+  color: #555;
   font-size: 0.7rem;
 }
 
-/* Page number styling */
+/* Page number style */
 section::after {
   font-size: 0.65rem;
-  color: #555;
+  color: #666;
 }
 
-/* Code block styling */
+/* Code styling */
 code {
   background: #f4f4f4;
   padding: 4px 8px;
   border-radius: 6px;
+  font-size: 0.9rem;
 }
-</style>
 
-<!-- Theme registration -->
-<style>
-/* Marp Theme: product-docs */
+/* Custom theme variables */
 :root {
   --color-background: #ffffff;
-  --color-foreground: #222;
-  --color-highlight: #0057ff;
+  --color-foreground: #222222;
+  --color-accent: #0057ff;
 }
 </style>
 
 # Product Documentation  
-### Technical Presentation  
-**Janani — 23f1002293@ds.study.iitm.ac.in**
+### Technical Presentation — 2025  
+**Janani • 23f1002293@ds.study.iitm.ac.in**
 
 ---
 
@@ -69,33 +74,52 @@ code {
 
 # Product Overview
 
-Our software provides enterprise-grade automation tools for workflow orchestration, event streaming, and analytics.
+Our software provides enterprise-grade automation tools for:
 
-**Built for:**
+- Workflow orchestration  
+- Event-driven processing  
+- Realtime analytics  
+- Monitoring & observability  
+
+**Designed for:**
 
 - Scalability  
 - Maintainability  
 - Developer productivity  
-- Observability  
 
 ---
 
 <!-- Background Image Slide -->
-<!-- Replace with your GitHub raw URL if needed -->
-![bg](https://images.unsplash.com/photo-1535223289827-42f1e9919769?w=1400)
+![bg](https://images.unsplash.com/photo-1535223289827-42f1e9919769?w=1600)
 
 # System Architecture Overview
 
-A simplified architecture of the product showing clients, API gateway, event processors, and analytics engine.
+A high-level architecture illustrating:
+
+- Clients  
+- API Gateway  
+- Event Processors  
+- Distributed Queue  
+- Analytics Engine  
 
 ---
 
-# Example Code Snippet
+# Key Features
 
-```python
-from product_sdk import Client
+### 🚀 High throughput event engine  
+Millions of events per second with horizontal scaling.
 
-client = Client(api_key="secret-key")
+### 📡 Unified API gateway  
+Handles routing, throttling, auth, logging.
 
-response = client.get_metrics()
-print(response)
+### 📊 Built-in analytics  
+Supports dashboards, anomaly detection & custom metrics.
+
+### 🧩 Modular components  
+Drop-in microservices and pluggable pipelines.
+
+---
+
+# API Documentation
+
+### Base URL
